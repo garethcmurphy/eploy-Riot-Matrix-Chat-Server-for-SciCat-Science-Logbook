@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: bubuntux/riot-web
-  tag: latest
+  repository: dacat/scichat
+  tag: 736a9f3cbfd6472f934f383b1322349ab4c81b76
   pullPolicy: Always
 service:
   name: riot
@@ -16,7 +16,7 @@ ingress:
   # Used to create an Ingress record.
   # this will be extended by environment within yaml file
   # TODO: change service name to include environment ?
-  host: scicat01.esss.lu.se
+  host: scichat.esss.lu.se
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
